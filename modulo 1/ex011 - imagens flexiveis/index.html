@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imagens dinamicas, audios e videos</title>
+</head>
+<body>
+    <h2>Imagens Flexiveis</h2>
+    <picture>
+        <img src="foto-g.png" alt="A imagem flexivel funciona">
+    </picture>
+    <h3>mudanca no codigo</h3>
+    <picture>
+        <source media="(max-width: 1050px)" srcset="foto-p.jpg" type="image/png">
+        <img src="foto-g.png" alt="A imagem flexivel funciona">
+    </picture>
+    <h3>mudanca no  codigo</h3>
+    <picture>
+        <source media="(max-width;; 750px)" srcset="foto-p.jpg" type="image/png">
+        <source media="(max-width: 1050px)" srcset="foto-m.webp" type="image/png">
+        <img src="foto-g.png" alt="A imagem flexivel funciona">
+    </picture>
+    <h3>colocando audio</h3>
+     <audio preload="metadata" controls autoplay loop>
+        <source src="Na Boquinha da Garrafa(MP3_160K).mp3" type="audio/mpeg">
+        <source src="Na Boquinha da Garrafa(MP3_160K).ogg" type="audio/ogg">
+        <source src="Na Boquinha da Garrafa(MP3_160K).wav">
+        <p>Seu navegador nao suporta audio</p>
+     </audio>
+     <video width="600" poster=thumb ">
+
+     </video>
+</body>
+</html> 
+
+

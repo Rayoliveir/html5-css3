@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h2>Listas ordenadas</h2>
+    <p>
+        A tag &lt;ol&gt; possui um parametro type, onde configuramos o tipo de marcador da lista
+        atual. As opções de valores para esse parâmetro são:
+        <br>
+        1 - Valor padrao. Cria listas numeradas. Ex: 1, 2, 3, 4, ...
+        <br>
+        A - Cria listas alfabeticas em maiusculas. Ex: A, B, C, D, ...
+        <br>
+        a - Cria listas alfabeticas em minusculas. Ex: a, b, c, d, ...
+        <br>
+        I - Cria listas com algarismos romanos em maiusculas. Ex: I, II, III, IV, ...
+        <br>
+        i - Cria listas com algarismos romanos em minusculas. Ex: i, ii, iii, iv, ...
+        <br>
+        Voce tambem pode indicar o inicio da contagem usando o parametro start.
+        
+        Por exemplo, a tag &lt;ol type="I" start = "5"&gt; vai gerar itens numerados como V,
+        VI, VII, VIII, IX,
+    </p>
+    <ol>
+        <li type="1">Intem 1</li>
+        <li type="A">Intem 2</li>
+        <li type="a">Intem 3</li>
+        <li type="I">Intem 4</li>
+        <li type="i">Intem 5</li>
+    </ol>
+    <h2>Listas não ordenadas</h2>
+    <ul>
+        <li>Intem 1</li>
+        <li>Intem 2</li>
+        <li>Intem 3</li>
+        <li>Intem 4</li>
+        <li>Intem 5</li>
+    </ul>
+    <p>
+        O marcador padrão é a bolinha preta totalmente preenchida (circle), mas existe a opção de configurar a propriedade 'type' da tag &lt;ul&gt; com os seguintes valores:
+        <br>
+        <ul>
+            <li type="disc">Disc - padrão. uma bola preta totalmente pintada.</li>
+            <li type="circle">Circle - Uma bola com uma borda preta e sem preenchimento.</li>
+            <li type="square">Square - Um pequeno quadrado preto totalmente pintado.</li>
+        </ul>
+    </p>
+    <h2>Misturando as coisas</h2>
+    <p>podemos criar listas mistas, configurando uma lista dentro da outra
+    <br>
+    veja o exemplo a seguir:
+    <br>
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <ol type="a">
+            <li>Item 2.1</li>
+            <li>Item 2.2</li>
+            <li>Item 2.3</li>
+        </ol>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <ul>
+            <li>Item 4.1</li>
+            <li>Item 4.2</li>
+            <li>Item 4.3</li>
+        </ul>
+        <li>Item 5</li>
+    </ol>
+    </p>
+</body>
+</html>

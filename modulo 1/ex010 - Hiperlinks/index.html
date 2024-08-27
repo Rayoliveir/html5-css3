@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ligações em toda parte</title>
+</head>
+<body>
+    <p>
+    <h2>Hiperlinks</h2>
+        <a href="https://gustavoguanabara.github.io">Acesse meu perfil Github</a>
+        <br>
+        <a href="https://www.w3schools.com/html/" hreflang="en">site da W3Schools (em Inglês)</a>
+        <br>
+    <h2>Mira no alvo</h2>
+        para controlar onde o link vai abrir usamos o atibuto <em>target</em> que suporta os seguintes valores.
+
+        <ul>
+            <li><em>_blank vai abrir o link em uma nova janela em branco</em></li>
+            <li><em>_self vai abrir o link na janela ou frame atual (padrão)</em></li>
+            <li><em>_top vai desfazer todos os frames e abrir o destino no navegador completo</em></li>
+            <li><em>_parent similar ao uso do  <em>_top</em> em uma referência à janela mãe</em></li>
+            <li>nome-do-frame caso esteja usando frames, indicar o nome da janela a abrir</li>
+        </ul>
+        <h3>vamos usar apenas <em>_blank</em> e <em>_self</em></h3>
+        <a href="pagina2.html" target="_self">Continuar navegando no site</a>
+        <br>
+        <a href="https://gustavoguanabara.github.com" target="_blank">Abrir perfil github em nova janela</a>
+
+        <h2>Seu ou dos outros?</h2>
+        <br>
+        Existe um recurso bem interessante para links que e indicar qual e a
+        natureza do destino usando o atributo rel. Esse atributo aceita varios
+        valores, entre eles vou citar:
+        <br> <br>
+        <ul>
+            <li><em>next</em> indica que o link e para a proxima parte do documento atual</li>
+            <li><em>prev</em> indica que o link e para a parte anterior do documento atual</li>
+            <li><em>rauthor</em> indica que e um link para o site do autor do artigo atual</li>
+            <li><em>rexternal</em> indica que e um link para outro site que nao faz parte do site atual </li>
+            <li><em>nofollow</em> Indica que é um link para um site nao endossado, como um link pago</li>
+        </ul>
+
+        <a href="pagina2.html" target="_self" rel="next">Continuar navegando no site
+        </a>
+            <br>
+        <a href="https: //gustavoguanabara.github.com" target="_blank" rel="external">Abrir perfil GitHub em nova janela
+        </a>
+
+        <h2>Dowloads</h2>
+        <a href="arquivos/meulivro.pdf" download="meulivro.pdf" type="application/pdf">Baixe aqui o PDF do meu livro
+        </a>
+        <br> <br>
+        Aqui vao alguns media types bem usados no nosso dia-a-dia:
+        <blockquote>    
+        <ul>
+            > application/zip <br>
+            > text/html <br>
+            > text/css <br>
+            > text/javascript <br>
+            > video/mp4 <br>
+            > video/H264 <br>
+            > video/JPEG <br>
+            > audio/aac <br>
+            > audio/mpeg <br>
+            > font/ttf <br>
+            > image/jpeg <br>
+            > image/png <br>
+        </ul>
+        </blockquote>
+
+
+    </p>
+</body>
+</html>
